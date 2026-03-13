@@ -1,12 +1,12 @@
-# frontend1
+# com.ubisam.projects.semina.frontend
 
 ## 개요
-Vue 3 + Vite 기반의 프론트엔드 예제 프로젝트입니다. 컴포넌트 기반 구조와 타입스크립트, 모던 프론트엔드 개발 환경을 제공합니다.
+Vue 3 + Vite 기반의 세미나 frontend 코드입니다.
 
 ## 폴더 구조
 
 ```
-frontend1/
+com.ubisam.projects.semina.frontend/
 ├── public/                       # 정적 파일
 ├── src/
 │   ├── assets/                   # 이미지, 폰트 등 에셋
