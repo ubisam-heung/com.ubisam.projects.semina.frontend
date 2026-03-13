@@ -1,0 +1,23 @@
+<template>
+    <h1>Hello World!</h1>
+</template>
+<script>
+    import stompjs from 'stompjs';
+
+    export default{
+        name: 'Hello',
+        mounted(){
+
+            let url = 'ws://localhost:9030/stomp/websocket';
+            let ws = stompjs.client(url);
+            ws.connect({}, frame => {
+                console.log('Connected :' + frame);
+                ws.subscribe('/topic/robot', message => {
+                    console.log('message: '+ message.body);
+                });
+            }, error => {
+                console.error("error: "+ error);
+            })
+        },
+    };
+</script>
